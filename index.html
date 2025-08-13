@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Love and Deespace Fanclub</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/343/original/Lads_all.png?1745875739"
+          alt="Greek Yogurt"
+        />
+        <h1>🪐Welcome to Love and Deespace Fanclub🪐</h1>
+        <h2>
+          A place when you can fangirl about our favorite guys in the galaxy
+        </h2>
+        <p>
+          Known as one of the most popular Otome games of 2024, Love and
+          Deespace leads us to know a dystopic future where we, as the
+          protagonist, must restore the peace of Linkon City, along with the
+          guys who will help us understand more the secrets that are hidden in
+          this mysterious and futuristic world, while in the process finding our
+          way to love them.
+        </p>
+
+        <p class="learn-aboutgame">
+          Want to learn more about the game? 👉
+          <a
+            href="https://loveanddeepspace.fandom.com/wiki/Love_and_Deepspace_Wiki"
+            target="_blank"
+            class="click-here"
+          >
+            click here
+          </a>
+        </p>
+        <hr />
+
+        <p class="learn-guys">Learn more about the guys</p>
+        <ul>
+          <li>
+            <a
+              href="https://loveanddeepspace.fandom.com/wiki/Xavier"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button class="xavier-button">⭐️ Xavier</button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://loveanddeepspace.fandom.com/wiki/Zayne"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button class="zayne-button">⛄️ Zayne</button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://loveanddeepspace.fandom.com/wiki/Rafayel"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button class="rafayel-button">🐟 Rafayel</button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://loveanddeepspace.fandom.com/wiki/Sylus"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button class="sylus-button">😈 Sylus</button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://loveanddeepspace.fandom.com/wiki/Caleb"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button class="caleb-button">🍎 Caleb</button>
+            </a>
+          </li>
+        </ul>
+
+        <button class="join-button">🪐Join the Club🪐</button>
+        <p class="footer">
+          💫This page was built by Yadira De la Torre Ruiz 💫
+        </p>
+      </div>
+    </section>
+    <script>
+      function joinClub() {
+        let userName = prompt("What's your name?");
+        userName = userName.trim();
+        let capitalizedNameWord =
+          userName.charAt(0).toUpperCase() + userName.slice(1);
+        let discordName = prompt("What's your Discord username?");
+        alert(
+          `Hello ${capitalizedNameWord}, Welcome to the club 😎, we have send you an Discord invitation!`
+        );
+      }
+
+      let changeButton = document.querySelector(".join-button");
+      changeButton.addEventListener("click", joinClub);
+    </script>
+  </body>
+</html>
